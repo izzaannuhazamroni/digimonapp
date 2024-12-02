@@ -1,0 +1,52 @@
+name: digimon_app
+description: A Flutter application to browse, search, and filter Digimon using the Digimon API.
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP client for API calls
+  dio: ^5.0.0
+
+  # State management (optional, for scalability)
+  flutter_bloc: ^8.1.0
+  equatable: ^2.0.3
+
+  # Widgets and utilities
+  provider: ^6.0.5
+  cached_network_image: ^3.2.3
+
+  # For shimmer effect loading
+  shimmer: ^2.0.0
+
+  # For offline caching
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # For JSON serialization
+  json_annotation: ^4.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # For JSON code generation (if needed)
+  build_runner: ^2.3.3
+  json_serializable: ^6.6.2
+
+flutter:
+  uses-material-design: true
+
+  # Fonts (Roboto family)
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
